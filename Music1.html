@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Music Store</title>
+    <style>
+        
+
+        /* Add your existing CSS styles here */
+
+        /* Add more CSS styles as needed */
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <a href="index.html">Home</a>
+            <div class="cart-icon" id="cart-icon">
+                <img src="cart-icon.png" alt="Shopping Cart">
+                <div class="mini-cart" id="mini-cart">
+                    <!-- Mini cart content will be dynamically added using JavaScript -->
+                </div>
+            </div>
+        </nav>
+        <!-- ... (existing header content) ... -->
+    </header>
+
+    <section class="products">
+        <!-- ... (existing product entries) ... -->
+
+        <!-- Additional Products -->
+        <article class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p class="category">Category 1</p>
+            <p class="description">Description of Product 1.</p>
+            <p class="price">$19.99</p>
+            <button class="add-to-cart" onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+        </article>
+
+        <article class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p class="category">Category 2</p>
+            <p class="description">Description of Product 2.</p>
+            <p class="price">$29.99</p>
+            <button class="add-to-cart" onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+        </article>
+
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <!-- ... (remaining body content) ... -->
+
+    <script>
+        function addToCart(productName, price) {
+            const miniCart = document.getElementById('mini-cart');
+            
+            // Create a new cart item element
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `
+                <span>${productName}</span>
+                <span>$${price.toFixed(2)}</span>
+            `;
+            
+            // Append the new cart item to the mini cart
+            miniCart.appendChild(cartItem);
+
+            // Update the total price in the mini cart
+            updateTotalPrice();
+            
+            // Show the mini cart
+            miniCart.classList.add('visible');
+        }
+
+        function updateTotalPrice() {
+            const cartItems = document.querySelectorAll('.cart-item span:last-child');
+            let totalPrice = 0;
+
+            cartItems.forEach(item => {
+                const price = parseFloat(item.textContent.slice(1)); // Remove the dollar sign and convert to float
+                totalPrice += price;
+            });
+
+            const totalPriceElement = document.querySelector('.total-price');
+            totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+</html>

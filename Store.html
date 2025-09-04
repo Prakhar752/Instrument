@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link rel="stylesheet" href="store1.css">
+</head>
+<body>
+    <link rel="icon" type="image/x-icon" href="instrument1.jpg">
+    <a href="login.html" class="Login">Login Here..</a>
+    <a href="Contact.html" class="Contact">Contact Us..</a>
+    <header>
+        <h1>Music Instruments Store </h1>
+        
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1><u>Welcome to our Music Instruments Store</u></h1>
+            <p><b>Discover a world of music!</b></p>
+        </div>
+    </section>
+
+    <section class="products">
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAL2JxSWSgSPtxTNkhia9yes9Pj8ZhkPEIA&usqp=CAU" alt="Acoustic Guitar">
+            <h3><u>Acoustic Guitar</u></h3>
+            <p class="category">String Instruments</p>
+            <p class="description">High-quality acoustic guitar for a rich sound experience.</p>
+            <p class="price">$299.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="data:image/jpeg;base64,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" alt="Digital Keyboard">
+            <h3><u>Digital Keyboard</u></h3>
+            <p class="category">Keyboards</p>
+            <p class="description">Versatile digital keyboard with various sound options.</p>
+            <p class="price">$199.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGSINTEqMz_sspDUiHBp1pxppYJ4x2nE7hug&usqp=CAU" alt="Drum Set">
+            <h3><u>Drum Set</u></h3>
+            <p class="category">Percussion Instruments</p>
+            <p class="description">Complete drum set for aspiring drummers.</p>
+            <p class="price">$449.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNNypqyJm2ByN7-9CHDLT4sCfkXEnqtVB-hMwm5QTrNMTbLlhjctcEgLmhuQ9Aafrne9M&usqp=CAU" alt="Violin">
+            <h3><u>Violin</u></h3>
+            <p class="category">String Instruments</p>
+            <p class="description">Elegant violin for classical music enthusiasts.</p>
+            <p class="price">$189.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNHAaclDoKqbFZVW6Ghclx3lL9moQugqhkA&usqp=CAU" alt="Trumpet">
+            <h3><u>Trumpet</u></h3>
+            <p class="category">Brass Instruments</p>
+            <p class="description">Classic trumpet for jazz and classical performances.</p>
+            <p class="price">$349.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhTs4E5ZHcYpPtzzTzpPwC7FEkMFjUbe57g&usqp=CAU" alt="Flute">
+            <h3><u>Flute</u></h3>
+            <p class="category">Woodwind Instruments</p>
+            <p class="description">Beautiful flute with a sweet and melodious tone.</p>
+            <p class="price">$129.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFt2NO8y7Cmy8VuELcNXQEhKpfEOKAIx3QA&usqp=CAU" alt="Bass Guitar">
+            <h3><u>Bass Guitar</u></h3>
+            <p class="category">String Instruments</p>
+            <p class="description">Powerful bass guitar for low-frequency enthusiasts.</p>
+            <p class="price">$379.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6GIlKzxTmPbEMIRJ2SNg9TfKBruzI8mQdNHVUY_rNsgj551wKHXtTCXqvzJ3tZ0hLZpg&usqp=CAU" alt="Saxophone">
+            <h3><u>Saxophone</u></h3>
+            <p class="category">Brass Instruments</p>
+            <p class="description">Versatile saxophone for various musical genres.</p>
+            <p class="price">$499.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWtZ3QgHslY-bk69Dx4NyYbhNtLAISJf2ng&usqp=CAU" alt="Electric Guitar">
+            <h3><u>Electric Guitar</u></h3>
+            <p class="category">String Instruments</p>
+            <p class="description">Sleek electric guitar for rocking performances.</p>
+            <p class="price">$449.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+
+        <article class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc4SCXvkeE_-kShgAKETER5ALz1GJAzqOFaA&usqp=CAU" alt="Grand Piano">
+            <h3><u>Grand Piano</u></h3>
+            <p class="category">Keyboards</p>
+            <p class="description">Elegant grand piano for classical and modern compositions.</p>
+            <p class="price">$5999.99</p>
+            <button class="add-to-cart" data-tooltip="Add to Cart">
+                <img src="cart-icon.png" alt="Add to Cart">
+            </button>
+        </article>
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRusgSyl1VOQaIIMg3tJSrXvGDpgXI9FNsXmg&usqp=CAU" alt="Ukulele">
+    <h3><u>Ukulele</u></h3>
+    <p class="category">String Instruments</p>
+    <p class="description">Compact ukulele for a fun and light-hearted musical experience.</p>
+    <p class="price">$79.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBeT9o2_pivK2zfE-zuHS3nlw8RLrzU1A-Q&usqp=CAU" alt="Clarinet">
+    <h3><u>Clarinet</u></h3>
+    <p class="category">Woodwind Instruments</p>
+    <p class="description">Smooth and expressive clarinet for classical and jazz performances.</p>
+    <p class="price">$299.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJch4G2AGEN_FwCuIPMO49ahTSMdPr7LeNtg&usqp=CAU" alt="Accordion">
+    <h3><u>Accordion</u></h3>
+    <p class="category">Keyboard Instruments</p>
+    <p class="description">Traditional accordion for folk and world music enthusiasts.</p>
+    <p class="price">$599.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwjohfP2ppkCe4zUWiROiXoRozByqcy2d6NQ&usqp=CAU" alt="Trombone">
+    <h3><u>Trombone</u></h3>
+    <p class="category">Brass Instruments</p>
+    <p class="description">Bold and powerful trombone for brass band performances.</p>
+    <p class="price">$449.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUt8Pp5cwW-LsQ5X7mUnFlqYff9Fi23logIA&usqp=CAU" alt="Harmonica">
+    <h3><u>Harmonica</u></h3>
+    <p class="category">Wind Instruments</p>
+    <p class="description">Portable harmonica for blues and folk music exploration.</p>
+    <p class="price">$29.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRiHp18fidXCBRRlvWFglY-MjOgPtFxy1WGw&usqp=CAU" alt="Conga Drum">
+    <h3><u>Conga Drum</u></h3>
+    <p class="category">Percussion Instruments</p>
+    <p class="description">Authentic conga drum for rhythm and beats.</p>
+    <p class="price">$129.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiNdPHWpQoGG9W6rynt0EvIDpQ2NbHjZMF8szd6T6CuHEYYVqNzhsTPj-K3vw39ldNl5U&usqp=CAU" alt="Bagpipes">
+    <h3><u>Bagpipes</u></h3>
+    <p class="category">Wind Instruments</p>
+    <p class="description">Traditional bagpipes for Scottish and Celtic music.</p>
+    <p class="price">$799.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UL1nA_BcJmF_GcdCcJaGAD5B51Xnlmgeaw&usqp=CAU" alt="Sitar">
+    <h3><u>Sitar</u></h3>
+    <p class="category">String Instruments</p>
+    <p class="description">Exquisite sitar for classical Indian music.</p>
+    <p class="price">$899.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgFw4QGFXnC28jhTc7bSK9v4JSyUCZmWc-IQ&usqp=CAU" alt="Xylophone">
+    <h3><u>Xylophone</u></h3>
+    <p class="category">Percussion Instruments</p>
+    <p class="description">Colorful xylophone for musical education and play.</p>
+    <p class="price">$69.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+<article class="product">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdXK3jqRRQmmgiFHSIWV8vG6pRl3A73qFt3A&usqp=CAU" alt="Oud">
+    <h3><u>Oud</u></h3>
+    <p class="category">String Instruments</p>
+    <p class="description">Traditional oud for Middle Eastern and Eastern Mediterranean music.</p>
+    <p class="price">$499.99</p>
+    <button class="add-to-cart" data-tooltip="Add to Cart">
+        <img src="cart-icon.png" alt="Add to Cart">
+    </button>
+</article>
+
+
+<section class="products">
+    <!-- Musical Instruments -->
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRusgSyl1VOQaIIMg3tJSrXvGDpgXI9FNsXmg&usqp=CAU" alt="Ukulele">
+        <h3><u>Ukulele</u></h3>
+        <p class="category">String Instruments</p>
+        <p class="description">Compact ukulele for a fun and light-hearted musical experience.</p>
+        <p class="price">$79.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBeT9o2_pivK2zfE-zuHS3nlw8RLrzU1A-Q&usqp=CAU" alt="Clarinet">
+        <h3><u>Clarinet</u></h3>
+        <p class="category">Woodwind Instruments</p>
+        <p class="description">Smooth and expressive clarinet for classical and jazz performances.</p>
+        <p class="price">$299.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <!-- Music Books -->
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfjgU9ZsiM3MYBsu35zng-jkOpxACoqt4Y3g&usqp=CAU" alt="Singer Book">
+        <h3><u>Singer's Handbook</u></h3>
+        <p class="category">Books</p>
+        <p class="description">A comprehensive guide for aspiring singers.</p>
+        <p class="price">$19.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVW4lH_QMs0cgj2Mee1Dwz6VZnCNB14mLug&usqp=CAU" alt="Sheet Music">
+        <h3><u>Sheet Music Collection</u></h3>
+        <p class="category">Sheet Music</p>
+        <p class="description">A collection of sheet music for various instruments and genres.</p>
+        <p class="price">$29.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <!-- Accessories -->
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROjinlc6d-i8nvpWtri6YGVxZruoGwhZuFg&usqp=CAU" alt="Guitar Picks">
+        <h3><u>Guitar Picks (Set of 5)</u></h3>
+        <p class="category">Accessories</p>
+        <p class="description">High-quality guitar picks for precise playing.</p>
+        <p class="price">$5.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg_7gLc1QtwiQIWRnBns25B8aIIid60Atsg&usqp=CAU" alt="Metronome">
+        <h3><u>Mechanical Metronome</u></h3>
+        <p class="category">Accessories</p>
+        <p class="description">A classic mechanical metronome for perfect timing.</p>
+        <p class="price">$39.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+        
+    </article>
+
+
+<section class="products">
+   
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRusgSyl1VOQaIIMg3tJSrXvGDpgXI9FNsXmg&usqp=CAU"" alt="Ukulele">
+        <h3><u>Ukulele</u></h3>
+        <p class="category">String Instruments</p>
+        <p class="description">Compact ukulele for a fun and light-hearted musical experience.</p>
+        <p class="price">$79.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBeT9o2_pivK2zfE-zuHS3nlw8RLrzU1A-Q&usqp=CAU"" " alt="Clarinet">
+        <h3><u>Clarinet</u></h3>
+        <p class="category">Woodwind Instruments</p>
+        <p class="description">Smooth and expressive clarinet for classical and jazz performances.</p>
+        <p class="price">$299.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+   
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfjgU9ZsiM3MYBsu35zng-jkOpxACoqt4Y3g&usqp=CAU" alt="Singer Book">
+        <h3><u>Singer's Handbook</u></h3>
+        <p class="category">Books</p>
+        <p class="description">A comprehensive guide for aspiring singers.</p>
+        <p class="price">$19.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVW4lH_QMs0cgj2Mee1Dwz6VZnCNB14mLug&usqp=CAU"" alt="Sheet Music">
+        <h3><u>Sheet Music Collection</u></h3>
+        <p class="category">Sheet Music</p>
+        <p class="description">A collection of sheet music for various instruments and genres.</p>
+        <p class="price">$29.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <!-- Accessories -->
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROjinlc6d-i8nvpWtri6YGVxZruoGwhZuFg&usqp=CAU" alt="Guitar Picks">
+        <h3><u>Guitar Picks (Set of 5)</u></h3>
+        <p class="category">Accessories</p>
+        <p class="description">High-quality guitar picks for precise playing.</p>
+        <p class="price">$5.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrg_7gLc1QtwiQIWRnBns25B8aIIid60Atsg&usqp=CAU"" alt="Metronome">
+        <h3><u>Mechanical Metronome</u></h3>
+        <p class="category">Accessories</p>
+        <p class="description">A classic mechanical metronome for perfect timing.</p>
+        <p class="price">$39.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lj-NYU1PxeaQdcmh734XcGw3ItSNOW_v_g&usqp=CAU" alt="Headphones">
+        <h3><u>Over-Ear Headphones</u></h3>
+        <p class="category">Audio Accessories</p>
+        <p class="description">High-quality over-ear headphones for immersive listening.</p>
+        <p class="price">$99.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZTzdetVSgHOMrST5iBVljEHs6ik9e4fDujxtXQnjwCksuImZ1IYPYy6B6tYqpUYrPQ5k&usqp=CAU" alt="Microphone">
+        <h3><u>Studio Microphone</u></h3>
+        <p class="category">Audio Accessories</p>
+        <p class="description">Professional studio microphone for crystal-clear recordings.</p>
+        <p class="price">$129.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjupzdrkoUtrfC6l-iTBKp_G50rcVTMT5qlA&usqp=CAU" alt="Digital Piano">
+        <h3><u>Digital Piano</u></h3>
+        <p class="category">Keyboards</p>
+        <p class="description">Full-size digital piano with weighted keys for realistic playing.</p>
+        <p class="price">$499.99</p>
+        <button class="add-to-cart" data-tooltip="Add to Cart">
+            <img src="cart-icon.png" alt="Add to Cart">
+        </button>
+    </article>
+
+  
+</section>
+</section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartItemsList = document.getElementById('cart-items');
+
+            const cart = [];
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const product = this.closest('.product');
+                    const productName = product.querySelector('h3').textContent;
+                    const productPrice = product.querySelector('.price').textContent;
+
+                   
+                    cart.push({ name: productName, price: productPrice });
+
+                  
+                    updateCartDisplay();
+                });
+            });
+
+            function updateCartDisplay() {
+               
+                cartItemsList.innerHTML = '';
+
+              
+                cart.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.name} - ${item.price}`;
+                    cartItemsList.appendChild(listItem);
+                });
+            }
+        });
+        
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <style>
+          
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const addToCartButtons = document.querySelectorAll('.add-to-cart');
+                const cartItemsList = document.getElementById('cart-items');
+                const totalDisplay = document.getElementById('total-price');
+    
+                const cart = [];
+    
+                addToCartButtons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        const product = this.closest('.product');
+                        const productName = product.querySelector('h3').textContent;
+                        const productPrice = parseFloat(product.querySelector('.price').textContent.replace('$', ''));
+    
+                       
+                        const existingItem = cart.find(item => item.name === productName);
+    
+                        if (existingItem) {
+                            existingItem.quantity++;
+                        } else {
+                         
+                            cart.push({ name: productName, price: productPrice, quantity: 1 });
+                        }
+    
+                       
+                        updateCartDisplay();
+                    });
+                });
+    
+                function updateCartDisplay() {
+                 
+                    cartItemsList.innerHTML = '';
+    
+                  
+                    cart.forEach(item => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `${item.name} - Quantity: ${item.quantity} - ${item.price.toFixed(2)}$`;
+                        cartItemsList.appendChild(listItem);
+                    });
+    
+                    const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+                    totalDisplay.textContent = `Total: ${totalPrice.toFixed(2)}$`;
+                }
+    
+                
+                const checkoutButton = document.getElementById('checkout-button');
+                checkoutButton.addEventListener('click', function () {
+                    alert('Thank you for your purchase!');
+                   
+                    cart.length = 0; 
+                    updateCartDisplay();
+                });
+            });
+        </script>
+    </head>
+    <body>
+       
+    
+        <section class="products">
+
+            
+    
+    
+        </section>
+    
+        <div class="Shop1">
+            <h2><u>Shopping Cart</u></h2>
+            <ul id="cart-items"></ul>
+            <label for="input-amount">Enter Amount: $</label>
+            <input type="text" id="input-amount" placeholder="0.00">
+            <button onclick="addItem()">Add Item</button>
+            <p class="total-price">Total: $<span id="total-amount">0.00</span></p>
+            <button onclick="submitOrder()" class="Sub1">SUBMIT</button>
+        </div>
+        
+        <script>
+            
+            function updateTotalAmount() {
+                var totalAmount = 0;
+               
+                var cartItems = document.querySelectorAll("#cart-items li");
+                cartItems.forEach(function (item) {
+                    var price = parseFloat(item.getAttribute("data-price"));
+                    totalAmount += price;
+                });
+        
+                
+                document.getElementById("total-amount").innerText = totalAmount.toFixed(2);
+            }
+        
+            
+            function addItem() {
+                var inputAmount = document.getElementById("input-amount").value;
+                var parsedAmount = parseFloat(inputAmount);
+        
+                if (!isNaN(parsedAmount) && parsedAmount > 0) {
+                    
+                    var cartList = document.getElementById("cart-items");
+                    var newItem = document.createElement("li");
+                    newItem.textContent = "Item";
+                    newItem.setAttribute("data-price", parsedAmount.toFixed(2));
+        
+                    
+                    cartList.appendChild(newItem);
+        
+                    
+                    updateTotalAmount();
+                } else {
+                    alert("Please enter a valid amount greater than zero.");
+                }
+            }
+        
+            
+            function submitOrder() {
+                
+                alert("Order submitted! Total amount: $" + document.getElementById("total-amount").innerText);
+            }
+        </script>
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Musical</title>
+    <style>
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Guitars & Bass</a></li>
+            <li><a href="#">Amplifiers & Effects</a></li>
+            <li><a href="#">Ukuleles/Mandolins</a></li>
+            <li><a href="#">Keyboard & Pianos</a></li>
+            <li><a href="#">Drums & Percussions</a></li>
+            <li><a href="#">Studio Recordings</a></li>
+            <li><a href="#">Service Center</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="#">Teacher's/Musician's</a></li>
+        </ul>
+    </nav>
+    <main>
+    </main>
+    <footer>
+        <p>©musical.com 2018. All Rights Reserved.</p>
+        <p>Call our Sales Executive +919540999000</p>
+    </footer>
+</body>
+</html>
+    </body>
+    </html>
+    
+</head>
+<body>
+    
+
+</body>
+</html>
+
+
+
+
+
+    </section>
+ 
+    <script>
+      
+    </script>
+</head>
+<body>
+   
+
+
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartItemsList = document.getElementById('cart-items');
+            const totalDisplay = document.getElementById('total-price');
+
+            const cart = getCartFromLocalStorage();
+
+            function getCartFromLocalStorage() {
+                const cartData = localStorage.getItem('cart');
+                return cartData ? JSON.parse(cartData) : [];
+            }
+
+            function updateCartDisplay() {
+                
+                cartItemsList.innerHTML = '';
+
+              
+                cart.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.name} - Quantity: ${item.quantity} - ${item.price.toFixed(2)}$`;
+                    cartItemsList.appendChild(listItem);
+                });
+
+               
+                const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+                totalDisplay.textContent = `Total: ${totalPrice.toFixed(2)}$`;
+            }
+
+          
+            updateCartDisplay();
+        });
+        
+        
+       
+        
+    </script>
+    
+    
+</head>
+<body>
+    
+ 
